@@ -777,10 +777,8 @@ footer a {
   .course-card {
     background: #ffffff;
     border-radius: 25px;
-    width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     margin: 10px;
-    transition: 0.25s ease-in-out;
   }
   .course-card-img {
     width: 100%;
@@ -834,17 +832,7 @@ footer a {
     text-align: center;
     color: #666;
   }
-  .course-card:hover {
-    transform: scale(1.05);
-  }
-  .course-card:hover .course-card-img .main {
-    transform: scale(1.1);
-  }
-  .course-card:hover .course-card-img .layered {
-    filter: blur(19);
-    transform: scale(1.5);
-  }
-
+ 
 
 
 
@@ -1031,7 +1019,12 @@ cursor: pointer;}
 
 
 
-
+.glide--swipeable {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  width: 80%;
+}
 
 
 
@@ -1083,6 +1076,13 @@ section.section.wrapper.wrapper-section {
 .text.flex{
   margin: 1vh;
 }
+.glide--swipeable {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  width: 100%;
+}
+
 }
 
 
