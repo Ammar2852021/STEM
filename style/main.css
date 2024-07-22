@@ -664,7 +664,7 @@ body{
   padding: 70px ;
   display: flex;
   justify-content: space-between;
-  background-color: #19302E;
+  background-color: var( --primary);
 }
 
 .main-footer ul {
@@ -690,7 +690,7 @@ body{
 }
 
 footer {
-  background-color: #19302E;
+  background-color: var( --primary);
   border-top: 1px solid #6EB981;
   font-size: 17px;
   padding: 15px 5px;
@@ -884,7 +884,7 @@ gap: 150px;
     font-family: "Poppins", Sans-serif;
     font-size: 20px;
     font-weight: 600;
-    background-color: #1EC1D9;
+    background-color: var( --primary);
     border-radius: 10px;
     padding: 10px;
     color: white;
@@ -926,7 +926,7 @@ gap: 150px;
     color: #666;
 }
 .select ul li :hover{
-    background-color: #1EC1D9;
+    background-color: var( --primary);
     width: 100%;
     padding: 10px;
 }
@@ -1017,7 +1017,7 @@ textarea{
 }
 
 input[type="submit"] {
-  background-color: #1EC1D9;
+  background-color: var( --primary);
   color: #ffffff;
   border-radius: 5px;
   min-height: 40px;
