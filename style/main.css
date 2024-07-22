@@ -1073,6 +1073,16 @@ cursor: pointer;}
   background: var( --primary) !important;
   border-radius: 5px;
 }
+.display-medium {
+  font-size: xx-large;
+}
+section.section.wrapper.wrapper-section {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+.text.flex{
+  margin: 1vh;
+}
 }
 
 
