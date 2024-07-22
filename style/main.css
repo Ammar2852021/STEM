@@ -648,62 +648,124 @@ picture {
 
 /*  */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap");
-/*  font-family: "Poppins", sans-serif;
-  font-family: "Sedan SC", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-footer {
+  padding: 70px ;
+  display: flex;
+  justify-content: space-between;
+  background-color: #19302E;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer h1 {
+  font-size: 22px;
+  line-height: 117%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.main-footer h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: #ffffffcc;
+  text-decoration:none;
+}
 
 footer {
-    background: #000;
-    padding: 40px 0;
-}
-.social-link ul li{
-  list-style:none;
-}
-
-.social-link ul li a {
-    color: #fff;
-    font-size: 1.35rem;
-    transition: all 0.5s ease-in-out;
-    line-height: 1.2;
-    text-decoration: none;
+  background-color: #19302E;
+  border-top: 1px solid #6EB981;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
 }
 
-ul.d-flex.list-none {
-    padding: 0;
-    gap: 20px;
-    justify-content: center;
-    margin: 0;
-}
-.social-link ul li img {
-    width: 45px;
-    filter: invert(1);
+footer a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.social-link ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.logoinfo p {
+  color: #6EB981;
+  font-size: 17px;
+  margin-top: 5px;
 }
 
-.copyright p {
-    font-size: 1.10rem;
-    color: #fff;
-    margin: 0;
-    line-height: 1.5;
+.contact-details {
+  margin-top: 20px;
 }
 
-.copyright {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;}
-
-.social-link {
-    margin: 0 0 30px;
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
 }
 
+.contact-details li a {
+  text-decoration:none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.sociallogos{
+  padding:20px 0;
+}
+
+.sociallogos .logobox a{
+  padding:0 10px;
+  text-decoration:none;
+  color:#ffffff;
+  font-size:22px;
+}
+
+.com ul li{
+  padding:5px 0;
+}
+
+@media only screen and (max-width: 749px) {
+  .main-footer {
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    .info{
+      padding:20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+  .sociallogos{
+    padding:20px 0;
+  }
+  .com{
+    padding:20px 0;
+  } 
+
+}
 
 
 
@@ -716,7 +778,7 @@ ul.d-flex.list-none {
 .card_ {
  
     height: 100%;
-  
+  overflow: hidden;
   }
   
   .course-card {
@@ -811,11 +873,11 @@ ul.d-flex.list-none {
 }
 
 
-.container.card_ {
+.card_ {
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
+    display: flex;
+gap: 150px;
+  }
 
 
 .elementor-button {
@@ -884,7 +946,29 @@ ul.d-flex.list-none {
 .contact_phone {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 50px;
+        font-family: Roboto;
+    color: #666;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
 }
+
+.contact_phone  p,a{
+
+      font-family: Roboto;
+  color: #666;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+
 ._flex {
     display: flex;
     align-items: center;
@@ -924,7 +1008,20 @@ textarea{
     outline: none;
     border: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin: 0px 0px 20px 0px;
+    padding: 30px 20px 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 3px 8px 0px rgba(211.49999999999997, 211.49999999999997, 211.49999999999997, 0.5);
+
 }
+
+input[type="submit"] {
+  background-color: #1EC1D9;
+  color: #ffffff;
+  border-radius: 5px;
+  min-height: 40px;
+cursor: pointer;}
 /*  */
 
 
@@ -944,7 +1041,7 @@ textarea{
 /*  */
 
 @media screen and (max-width:992px) {
-    .container.card_,.text.flex{
+    .card_,.text.flex{
         display: block;
     }
     .text.flex h1 {
@@ -961,4 +1058,7 @@ textarea{
     .contact_phone,._flex {
         display: block;
     }
+    .phone {
+      margin: 30px 0;
+  }
 }
