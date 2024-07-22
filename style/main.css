@@ -315,6 +315,7 @@ picture {
   row-gap: 1.25rem;
   margin-block: 2rem;
   margin-inline: 1.5rem;
+  align-items: center;
 }
 .menu-block {
   display: flex;
@@ -337,7 +338,6 @@ picture {
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-@media screen and (min-width: 48rem) {
   .menu {
     position: relative;
     left: 0;
@@ -364,7 +364,6 @@ picture {
     font-weight: 500;
     line-height: 1.5;
   }
-}
 
 .burger {
   position: relative;
@@ -570,7 +569,7 @@ picture {
 }
 @media screen and (min-width: 64rem) {
   .wrapper-image {
-    max-width: 24rem;
+    max-width: 30rem;
   }
 }
 .wrapper-content {
@@ -661,8 +660,8 @@ body{
 }
 
 .main-footer {
-  padding: 70px ;
-  display: flex;
+  padding: 25px 70px;
+    display: flex;
   justify-content: space-between;
   background-color: var( --primary);
 }
@@ -1013,6 +1012,7 @@ textarea{
     background-color: #ffffff;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 3px 8px 0px rgba(211.49999999999997, 211.49999999999997, 211.49999999999997, 0.5);
+    text-align: left;
 
 }
 
@@ -1022,9 +1022,13 @@ input[type="submit"] {
   border-radius: 5px;
   min-height: 40px;
 cursor: pointer;}
+
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 /*  */
-
-
 
 
 
@@ -1061,4 +1065,48 @@ cursor: pointer;}
     .phone {
       margin: 30px 0;
   }
+  img.attachment-large.size-large.wp-image-23306{
+    width: 50%;
+  }
+  svg{
+    width: 26px;
+    height: 26px;
+  }
+  .link.menu-inner {
+    display: none;
+}
+}
+
+
+
+.glide__arrow{
+  background-color: #FFF;
+    border-radius: 50%;
+    border-width: 0;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    color: #ecb101;
+    font-size: 24px;
+    height: 47px;
+    line-height: 1;
+    padding: 11px 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 300ms;
+    width: 47px;
+    z-index: 3;
+    position: absolute;
+    background-color: #FFFFFF;
+    color: #1EC1D9;
+}
+
+
+
+
+
+
+
+*{
+  font-family: "Cairo", sans-serif;
+
 }
