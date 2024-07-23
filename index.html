@@ -465,23 +465,27 @@
             new Glide('.glide', {
                 type: 'carousel',
                 startAt: 0,
-                perView: 3, // عدد الشرائح المعروضة في العرض الكامل
+                perView: 3,
                 focusAt: 'center',
                 gap: 10,
-                autoplay: 3000, // مدة التغيير بين الشرائح بالميلي ثانية (3000 ميلي ثانية = 3 ثواني)
-                animationDuration: 1000, // مدة التحريك بين الشرائح بالميلي ثانية (1000 ميلي ثانية = 1 ثانية)
-                rewind: true, // إضافة خاصية rewind لتدوير الشرائح بشكل دائري
+                autoplay: 3000,
+                animationDuration: 1000,
+                rewind: true,
                 breakpoints: {
                     1200: {
-                        perView: 2 // عدد الشرائح المعروضة للشاشات الكبيرة
+                        perView: 3
                     },
-                    800: {
-                        perView: 1 // عدد الشرائح المعروضة للشاشات الأصغر
+                    768: {
+                        perView: 2
+                    },
+                    576: {
+                        perView: 1
                     }
                 }
             }).mount();
         });
     </script>
+    
 
 
 
